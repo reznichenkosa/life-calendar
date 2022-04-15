@@ -1,6 +1,5 @@
 import React from 'react';
 import Calendar from '../../components/Calendar/Calendar';
-import Logo from '../../components/UI/Logo/Logo';
 import styles from './HomePage.module.scss';
 
 const HomePage = () => {
