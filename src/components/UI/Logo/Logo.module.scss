@@ -1,0 +1,18 @@
+.logo {
+    width: 210px;
+    font-size: 32px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--dark-color);
+    span {
+        margin-left: 5px;
+        display: block;
+        color: var(--white-color);
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: var(--blue-color);
+        font-weight: 700;
+    }
+}

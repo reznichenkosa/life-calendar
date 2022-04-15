@@ -1,0 +1,16 @@
+.btn {
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid var(--colors-btn);
+    border-radius: 5px;
+    color: var(--colors-btn);
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .5s all;
+
+    &:hover {
+        background-color: var(--colors-btn);
+        color: var(--colors-btn-hover);
+    }
+}

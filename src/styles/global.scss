@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body[data-mode='light'] {
+    --colors-text: hsl(200, 15%, 8%);
+    --colors-bg: hsl(0, 0%, 98%);
+    --colors-ui-base: hsl(0, 0%, 100%);
+    --colors-ui-alt: hsl(0, 0%, 52%);
+    --colors-calendar-item: hsl(0, 0%, 80%);
+    --colors-logo: hsl(230, 100%, 63%);
+    --colors-btn: hsl(230, 100%, 63%);
+    --colors-btn-hover: hsl(0, 0%, 100%);
+    background-color: var(--colors-ui-base);
+    color: var(--colors-text);
+}
+
+body[data-mode='dark'] {
+    --colors-text: hsl(0, 0%, 100%);
+    --colors-bg: hsl(207, 26%, 17%);
+    --colors-ui-base: hsl(209, 23%, 22%);
+    --colors-ui-alt: hsl(0, 0%, 100%);
+    --colors-calendar-item: hsl(209, 14%, 34%);
+    --colors-logo: hsl(230, 100%, 63%);
+    --colors-btn: hsl(0, 0%, 100%);
+    --colors-btn-hover: hsl(230, 100%, 63%);
+    background-color: var(--colors-ui-base);
+    color: var(--colors-text);
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    width: 1070px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.main {
+    padding: 40px 0;
+}

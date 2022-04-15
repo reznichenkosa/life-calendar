@@ -1,0 +1,14 @@
+.input {
+    border: none;
+    border-bottom: 1px solid var(--light-dark-color);
+    padding: 8px 10px;
+    font-size: 18px;
+    font-weight: 400;
+    &:focus {
+        outline: none;
+    }
+    &::placeholder {
+        color: var(--light-dark-color);
+        font-weight: 400;
+    }
+}
