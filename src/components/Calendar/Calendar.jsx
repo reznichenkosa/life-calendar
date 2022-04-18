@@ -1,16 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import styles from './Calendar.module.scss';
 
 const Calendar = () => {
-    const user = {
-        id: 1,
-        name: 'Sergey',
-        login: 'sergilk',
-        password: '12345678',
-        birthDate: "12.02.1994",
-        country: "Russia"
-    }
-    const lifeExcpectancy = 70;
+    const user = useSelector(state => state.user);
+    const lifeExpectancyData = useSelector(state => state.lifeExpectancy);
+    const lifeExcpectancy = lifeExpectancyData[user['gender']];
     const weeks = lifeExcpectancy * 52;
     const arr = [];
     const birthDate = new Date(user.birthDate);

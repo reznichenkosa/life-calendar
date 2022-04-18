@@ -1,14 +1,16 @@
 .input {
     border: none;
-    border-bottom: 1px solid var(--light-dark-color);
+    border-bottom: 1px solid var(--colors-ui-alt);
     padding: 8px 10px;
     font-size: 18px;
     font-weight: 400;
+    background: transparent;
+    color: inherit;
     &:focus {
         outline: none;
     }
     &::placeholder {
-        color: var(--light-dark-color);
+        color: var(--colors-ui-alt);
         font-weight: 400;
     }
 }

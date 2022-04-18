@@ -5,14 +5,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--dark-color);
+    color: var(--colors-text);
     span {
         margin-left: 5px;
         display: block;
-        color: var(--white-color);
+        color: var(--colors-logo-text);
         padding: 5px 10px;
         border-radius: 5px;
-        background-color: var(--blue-color);
+        background-color: var(--colors-logo);
         font-weight: 700;
     }
 }

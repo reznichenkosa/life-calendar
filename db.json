@@ -3,9 +3,11 @@
     {
       "id": 1,
       "name": "Andrey",
+      "login": "dron",
       "password": "12345678",
       "birthDate": "12.12.1994",
-      "country": "Russia"
+      "country": "Russia",
+      "gender": "male"
     }
   ],
   "events": [

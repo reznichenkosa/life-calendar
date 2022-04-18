@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import styles from './Header.module.scss';
 import Logo from '../UI/Logo/Logo';
 import CustomButton from '../UI/CustomButton/CustomButton';
-import lightMode from '../../assets/icons/brightness.png';
-import darkMode from '../../assets/icons/night-mode.png';
+import { useDispatch, useSelector } from 'react-redux';
+import { clearLifeExpectancy } from '../../store/LifeExpectancy/lifeExpectancy-actions';
+import { clearUser } from '../../store/User/user-actions';
 
 const Header = () => {
     const [mode, setMode] = useState('light');
+    const dispatch = useDispatch();
 
     useEffect(() => {
         document.body.setAttribute('data-mode', mode);
@@ -19,6 +21,11 @@ const Header = () => {
             setMode('light')
         }
     }
+    
+    const onSignOut = () => {
+        dispatch(clearLifeExpectancy());
+        dispatch(clearUser());
+    }
 
     return (
         <header className={styles.header}>
@@ -26,8 +33,10 @@ const Header = () => {
                 <div className={styles.wrapper}>
                     <a className={styles.logo} href="/"><Logo /></a>
                     <div className={styles.right}>
-                        <div className={styles.mode}><img onClick={toogleMode} src={mode === 'light' ? lightMode : darkMode} alt="" />{mode === 'light' ? 'Light mode' : 'Dark mode'}</div>
-                        <CustomButton>Sign Out</CustomButton>
+                        <div onClick={toogleMode} className={styles.mode}>
+                            { mode === 'light' ? <i className="bi bi-sun"></i> : <i className="bi bi-cloud-moon"></i>}{mode}
+                        </div>
+                        <CustomButton onClick={onSignOut}>Sign Out</CustomButton>
                     </div>
                 </div>
             </div>

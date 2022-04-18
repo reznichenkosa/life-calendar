@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 * {
     box-sizing: border-box;
@@ -10,7 +11,9 @@ body[data-mode='light'] {
     --colors-ui-base: hsl(0, 0%, 100%);
     --colors-ui-alt: hsl(0, 0%, 52%);
     --colors-calendar-item: hsl(0, 0%, 80%);
+    --colors-calendar-past: hsl(113, 76%, 31%);
     --colors-logo: hsl(230, 100%, 63%);
+    --colors-logo-text: hsl(0, 0%, 100%);
     --colors-btn: hsl(230, 100%, 63%);
     --colors-btn-hover: hsl(0, 0%, 100%);
     background-color: var(--colors-ui-base);
@@ -23,6 +26,7 @@ body[data-mode='dark'] {
     --colors-ui-base: hsl(209, 23%, 22%);
     --colors-ui-alt: hsl(0, 0%, 100%);
     --colors-calendar-item: hsl(209, 14%, 34%);
+    --colors-calendar-past: hsl(0, 0%, 52%);
     --colors-logo: hsl(230, 100%, 63%);
     --colors-btn: hsl(0, 0%, 100%);
     --colors-btn-hover: hsl(230, 100%, 63%);

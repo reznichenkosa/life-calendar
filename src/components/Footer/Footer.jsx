@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="container">
                 <div className={styles.wrapper}>
                     <div className={styles.copyright}>
-                        2022 Reznichenko S.A Life Calendar
+                        2022 Life Calendar
                     </div>
                 </div>
             </div>
